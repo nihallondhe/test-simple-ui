@@ -10,55 +10,98 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
-        .card-gradient {
-            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        
+        .gradient-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
         }
-        .text-gradient {
-            background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .btn-gradient {
-            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
+        
+        .gradient-button {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            transition: all 0.3s ease;
         }
-        .header-gradient {
-            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        
+        .gradient-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .gradient-border {
+            border: 2px solid transparent;
+            background: linear-gradient(white, white) padding-box,
+                        linear-gradient(135deg, #667eea, #764ba2) border-box;
         }
     </style>
 </head>
-<body class="p-8">
-    <header class="header-gradient rounded-2xl p-8 mb-8 shadow-2xl">
-        <h1 class="text-5xl font-bold text-center text-white">Gradient Designs</h1>
-        <p class="text-center text-white mt-4 text-xl">Built with Tailwind CSS</p>
-    </header>
+<body class="text-white p-6">
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold mb-4 gradient-text">Gradient Designs</h1>
+            <p class="text-xl opacity-90">Beautiful gradient styling with Tailwind CSS</p>
+        </header>
 
-    <main class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="card-gradient rounded-2xl p-6 shadow-2xl">
-                <h2 class="text-2xl font-bold text-white mb-4">Modern UI</h2>
-                <p class="text-white mb-6">Clean and responsive designs with smooth gradients.</p>
-                <img src="https://source.unsplash.com/800x600/?design" class="rounded-xl w-full h-48 object-cover" />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="gradient-card rounded-2xl p-8">
+                <img src="https://source.unsplash.com/800x600/?nature" 
+                     class="w-full h-48 object-cover rounded-xl mb-6">
+                <h3 class="text-2xl font-bold mb-4">Nature Gradient</h3>
+                <p class="opacity-90">Beautiful natural gradients inspired by landscapes.</p>
             </div>
 
-            <div class="bg-white rounded-2xl p-6 shadow-2xl">
-                <h2 class="text-gradient text-2xl font-bold mb-4">Creative Art</h2>
-                <p class="text-gray-700 mb-6">Beautiful imagery combined with gradient backgrounds.</p>
-                <img src="https://source.unsplash.com/800x600/?art" class="rounded-xl w-full h-48 object-cover" />
+            <div class="gradient-card rounded-2xl p-8">
+                <img src="https://source.unsplash.com/800x600/?technology" 
+                     class="w-full h-48 object-cover rounded-xl mb-6">
+                <h3 class="text-2xl font-bold mb-4">Tech Gradient</h3>
+                <p class="opacity-90">Modern gradients for technology interfaces.</p>
             </div>
 
-            <div class="card-gradient rounded-2xl p-6 shadow-2xl">
-                <h2 class="text-2xl font-bold text-white mb-4">Technology</h2>
-                <p class="text-white mb-6">Futuristic themes with vibrant color transitions.</p>
-                <img src="https://source.unsplash.com/800x600/?technology" class="rounded-xl w-full h-48 object-cover" />
+            <div class="gradient-card rounded-2xl p-8">
+                <img src="https://source.unsplash.com/800x600/?abstract" 
+                     class="w-full h-48 object-cover rounded-xl mb-6">
+                <h3 class="text-2xl font-bold mb-4">Abstract Art</h3>
+                <p class="opacity-90">Creative abstract gradient combinations.</p>
             </div>
         </div>
 
-        <div class="mt-12 text-center">
-            <button class="btn-gradient text-white font-bold py-4 px-8 rounded-full text-xl shadow-2xl hover:opacity-90 transition">
-                Explore More
+        <div class="gradient-border rounded-2xl p-8 mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-center">Gradient Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full gradient-button flex items-center justify-center">
+                        <span class="text-2xl">🎨</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Smooth Blends</h4>
+                    <p class="opacity-90">Seamless color transitions</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full gradient-button flex items-center justify-center">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Fast Loading</h4>
+                    <p class="opacity-90">Optimized performance</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full gradient-button flex items-center justify-center">
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Responsive</h4>
+                    <p class="opacity-90">Works on all devices</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button class="gradient-button text-white font-bold py-4 px-8 rounded-full text-lg">
+                Explore More Gradients
             </button>
-            <p class="text-white mt-8 text-lg">Refresh page for new Unsplash images</p>
         </div>
-    </main>
+    </div>
 </body>
 </>
