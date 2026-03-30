@@ -1,102 +1,53 @@
-<!DOCTYPE >
-< lang="en">
+html
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Styling</title>
+    <title>Styled Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        
-        .card-gradient {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-        
-        .button-gradient {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        }
-        
-        .header-gradient {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-        }
-        
-        .footer-gradient {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-        }
-        
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="text-white p-6">
-    <header class="header-gradient rounded-2xl p-8 mb-8 shadow-2xl">
-        <h1 class="text-4xl font-bold mb-4">Gradient Design</h1>
-        <p class="text-xl opacity-90">Beautiful gradient styling with Tailwind CSS</p>
+<body class="bg-gray-50 min-h-screen">
+    <header class="bg-blue-600 text-white p-6 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">Welcome to My Website</h1>
+            <p class="mt-2 text-blue-100">A simple page with Tailwind CSS and custom styles</p>
+        </div>
     </header>
-
-    <main class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <div class="card-gradient rounded-xl p-6 shadow-xl">
-                <img src="https://source.unsplash.com/800x600/?nature" 
-                     class="w-full h-48 object-cover rounded-lg mb-4" 
-                     alt="Nature">
-                <h3 class="text-2xl font-bold mb-2">Nature Gradient</h3>
-                <p class="opacity-90">Beautiful natural gradients inspired by the environment.</p>
-            </div>
-            
-            <div class="card-gradient rounded-xl p-6 shadow-xl">
-                <img src="https://source.unsplash.com/800x600/?technology" 
-                     class="w-full h-48 object-cover rounded-lg mb-4" 
-                     alt="Technology">
-                <h3 class="text-2xl font-bold mb-2">Tech Gradient</h3>
-                <p class="opacity-90">Modern gradients for technology and innovation.</p>
-            </div>
-            
-            <div class="card-gradient rounded-xl p-6 shadow-xl">
-                <img src="https://source.unsplash.com/800x600/?art" 
-                     class="w-full h-48 object-cover rounded-lg mb-4" 
-                     alt="Art">
-                <h3 class="text-2xl font-bold mb-2">Art Gradient</h3>
-                <p class="opacity-90">Creative gradients for artistic expressions.</p>
-            </div>
-        </div>
-
-        <div class="glass-effect rounded-2xl p-8 mb-8">
-            <h2 class="text-3xl font-bold mb-4">Glass Effect Section</h2>
-            <p class="text-lg mb-6">This section uses glass morphism effect with gradient background.</p>
-            <button class="button-gradient px-6 py-3 rounded-lg font-bold shadow-lg hover:opacity-90 transition">
-                Gradient Button
-            </button>
-        </div>
-
+    
+    <main class="container mx-auto p-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white/10 rounded-xl p-6">
-                <h3 class="text-2xl font-bold mb-3">Ocean Theme</h3>
-                <div class="h-32 rounded-lg mb-4" 
-                     style="background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);"></div>
-                <p>Blue gradients inspired by ocean waves.</p>
-            </div>
+            <section class="card">
+                <h2 class="section-title">About This Project</h2>
+                <p class="section-content">This HTML file uses Tailwind CSS via CDN and includes a custom styles.css file for additional styling.</p>
+                <button class="btn-primary">Learn More</button>
+            </section>
             
-            <div class="bg-white/10 rounded-xl p-6">
-                <h3 class="text-2xl font-bold mb-3">Sunset Theme</h3>
-                <div class="h-32 rounded-lg mb-4" 
-                     style="background: linear-gradient(135deg, #FF9A9E 0%, #FAD0C4 100%);"></div>
-                <p>Warm gradients inspired by sunset colors.</p>
-            </div>
+            <section class="card">
+                <h2 class="section-title">Features</h2>
+                <ul class="section-content list-disc pl-5 space-y-2">
+                    <li>Responsive design with Tailwind</li>
+                    <li>Custom CSS for specific components</li>
+                    <li>Clean, modern interface</li>
+                    <li>Easy to customize</li>
+                </ul>
+                <button class="btn-secondary">View Features</button>
+            </section>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Get Started</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-6">This example demonstrates how to combine Tailwind CSS with custom styles for a unique design.</p>
+            <button class="btn-large">Start Now</button>
         </div>
     </main>
-
-    <footer class="footer-gradient rounded-2xl p-8 mt-8 shadow-2xl">
-        <div class="text-center">
-            <p class="text-lg font-semibold">Gradient Styling with Tailwind CSS</p>
-            <p class="opacity-90 mt-2">Using Unsplash images for visual content</p>
+    
+    <footer class="bg-gray-800 text-white p-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 My Website. All rights reserved.</p>
+            <p class="mt-2 text-gray-400 text-sm">Built with Tailwind CSS and custom styles</p>
         </div>
     </footer>
 </body>
-</>
+</html>
