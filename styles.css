@@ -11,97 +11,92 @@
             min-height: 100vh;
         }
         
-        .gradient-card {
-            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        
-        .gradient-text {
+        .card-gradient {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
         
-        .gradient-button {
+        .button-gradient {
             background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            transition: all 0.3s ease;
         }
         
-        .gradient-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        .header-gradient {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
         }
         
-        .gradient-border {
-            border: 2px solid transparent;
-            background: linear-gradient(white, white) padding-box,
-                        linear-gradient(135deg, #667eea, #764ba2) border-box;
+        .footer-gradient {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
 <body class="text-white p-6">
-    <div class="max-w-6xl mx-auto">
-        <header class="text-center mb-12">
-            <h1 class="text-5xl font-bold mb-4 gradient-text">Gradient Designs</h1>
-            <p class="text-xl opacity-90">Beautiful gradient styling with Tailwind CSS</p>
-        </header>
+    <header class="header-gradient rounded-2xl p-8 mb-8 shadow-2xl">
+        <h1 class="text-4xl font-bold mb-4">Gradient Design</h1>
+        <p class="text-xl opacity-90">Beautiful gradient styling with Tailwind CSS</p>
+    </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <div class="gradient-card rounded-2xl p-8">
+    <main class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div class="card-gradient rounded-xl p-6 shadow-xl">
                 <img src="https://source.unsplash.com/800x600/?nature" 
-                     class="w-full h-48 object-cover rounded-xl mb-6">
-                <h3 class="text-2xl font-bold mb-4">Nature Gradient</h3>
-                <p class="opacity-90">Beautiful natural gradients inspired by landscapes.</p>
+                     class="w-full h-48 object-cover rounded-lg mb-4" 
+                     alt="Nature">
+                <h3 class="text-2xl font-bold mb-2">Nature Gradient</h3>
+                <p class="opacity-90">Beautiful natural gradients inspired by the environment.</p>
             </div>
-
-            <div class="gradient-card rounded-2xl p-8">
+            
+            <div class="card-gradient rounded-xl p-6 shadow-xl">
                 <img src="https://source.unsplash.com/800x600/?technology" 
-                     class="w-full h-48 object-cover rounded-xl mb-6">
-                <h3 class="text-2xl font-bold mb-4">Tech Gradient</h3>
-                <p class="opacity-90">Modern gradients for technology interfaces.</p>
+                     class="w-full h-48 object-cover rounded-lg mb-4" 
+                     alt="Technology">
+                <h3 class="text-2xl font-bold mb-2">Tech Gradient</h3>
+                <p class="opacity-90">Modern gradients for technology and innovation.</p>
             </div>
-
-            <div class="gradient-card rounded-2xl p-8">
-                <img src="https://source.unsplash.com/800x600/?abstract" 
-                     class="w-full h-48 object-cover rounded-xl mb-6">
-                <h3 class="text-2xl font-bold mb-4">Abstract Art</h3>
-                <p class="opacity-90">Creative abstract gradient combinations.</p>
-            </div>
-        </div>
-
-        <div class="gradient-border rounded-2xl p-8 mb-12">
-            <h2 class="text-3xl font-bold mb-6 text-center">Gradient Features</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 mx-auto mb-4 rounded-full gradient-button flex items-center justify-center">
-                        <span class="text-2xl">🎨</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2">Smooth Blends</h4>
-                    <p class="opacity-90">Seamless color transitions</p>
-                </div>
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 mx-auto mb-4 rounded-full gradient-button flex items-center justify-center">
-                        <span class="text-2xl">⚡</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2">Fast Loading</h4>
-                    <p class="opacity-90">Optimized performance</p>
-                </div>
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 mx-auto mb-4 rounded-full gradient-button flex items-center justify-center">
-                        <span class="text-2xl">📱</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2">Responsive</h4>
-                    <p class="opacity-90">Works on all devices</p>
-                </div>
+            
+            <div class="card-gradient rounded-xl p-6 shadow-xl">
+                <img src="https://source.unsplash.com/800x600/?art" 
+                     class="w-full h-48 object-cover rounded-lg mb-4" 
+                     alt="Art">
+                <h3 class="text-2xl font-bold mb-2">Art Gradient</h3>
+                <p class="opacity-90">Creative gradients for artistic expressions.</p>
             </div>
         </div>
 
-        <div class="text-center">
-            <button class="gradient-button text-white font-bold py-4 px-8 rounded-full text-lg">
-                Explore More Gradients
+        <div class="glass-effect rounded-2xl p-8 mb-8">
+            <h2 class="text-3xl font-bold mb-4">Glass Effect Section</h2>
+            <p class="text-lg mb-6">This section uses glass morphism effect with gradient background.</p>
+            <button class="button-gradient px-6 py-3 rounded-lg font-bold shadow-lg hover:opacity-90 transition">
+                Gradient Button
             </button>
         </div>
-    </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white/10 rounded-xl p-6">
+                <h3 class="text-2xl font-bold mb-3">Ocean Theme</h3>
+                <div class="h-32 rounded-lg mb-4" 
+                     style="background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);"></div>
+                <p>Blue gradients inspired by ocean waves.</p>
+            </div>
+            
+            <div class="bg-white/10 rounded-xl p-6">
+                <h3 class="text-2xl font-bold mb-3">Sunset Theme</h3>
+                <div class="h-32 rounded-lg mb-4" 
+                     style="background: linear-gradient(135deg, #FF9A9E 0%, #FAD0C4 100%);"></div>
+                <p>Warm gradients inspired by sunset colors.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-gradient rounded-2xl p-8 mt-8 shadow-2xl">
+        <div class="text-center">
+            <p class="text-lg font-semibold">Gradient Styling with Tailwind CSS</p>
+            <p class="opacity-90 mt-2">Using Unsplash images for visual content</p>
+        </div>
+    </footer>
 </body>
 </>
