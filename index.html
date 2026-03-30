@@ -1,47 +1,37 @@
-<!DOCTYPE >
-< lang="en">
+html
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Site</title>
+    <title>Homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50">
-    <header class="bg-white shadow">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-600">Logo</div>
-            <div class="space-x-4">
-                <a href="#" class="px-4 py-2 text-gray-700 hover:text-blue-600">Home</a>
-                <a href="#" class="px-4 py-2 text-gray-700 hover:text-blue-600">Login</a>
-                <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Sign Up</a>
-            </div>
-        </nav>
-    </header>
-
-    <main class="container mx-auto px-6 py-12">
-        <section class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Our Site</h1>
-            <p class="text-gray-600 max-w-2xl mx-auto">This is a simple example page with a header containing navigation buttons.</p>
-        </section>
-
-        <section class="grid md:grid-cols-2 gap-8">
-            <div>
-                <img src="https://source.unsplash.com/800x600/?nature" alt="Nature" class="w-full h-64 object-cover rounded-lg shadow">
-                <h2 class="text-2xl font-semibold mt-4 mb-2">Beautiful Nature</h2>
-                <p class="text-gray-600">Enjoy this serene image from Unsplash.</p>
-            </div>
-            <div>
-                <img src="https://source.unsplash.com/800x600/?city" alt="City" class="w-full h-64 object-cover rounded-lg shadow">
-                <h2 class="text-2xl font-semibold mt-4 mb-2">Urban Life</h2>
-                <p class="text-gray-600">A glimpse of city life and architecture.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-800 text-white py-8 mt-12">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2023 Simple Site. All rights reserved.</p>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-6">
+    <div class="max-w-4xl w-full text-center">
+        <h1 class="text-5xl font-bold text-gray-800 mb-8">
+            Welcome to Our Homepage
+        </h1>
+        
+        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            Discover amazing features and services tailored just for you. Click the button below to get started.
+        </p>
+        
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 mb-12">
+            Get Started Now
+        </button>
+        
+        <div class="flex justify-center">
+            <img 
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Modern workspace with laptop and plants" 
+                class="rounded-xl shadow-2xl max-w-2xl w-full h-auto"
+            >
         </div>
-    </footer>
+        
+        <p class="text-gray-500 mt-8">
+            Join thousands of satisfied users today
+        </p>
+    </div>
 </body>
-</>
+</html>
