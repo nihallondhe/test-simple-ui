@@ -1,0 +1,64 @@
+<!DOCTYPE >
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Styling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .card-gradient {
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gradient {
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
+        }
+        .header-gradient {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        }
+    </style>
+</head>
+<body class="p-8">
+    <header class="header-gradient rounded-2xl p-8 mb-8 shadow-2xl">
+        <h1 class="text-5xl font-bold text-center text-white">Gradient Designs</h1>
+        <p class="text-center text-white mt-4 text-xl">Built with Tailwind CSS</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card-gradient rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-2xl font-bold text-white mb-4">Modern UI</h2>
+                <p class="text-white mb-6">Clean and responsive designs with smooth gradients.</p>
+                <img src="https://source.unsplash.com/800x600/?design" class="rounded-xl w-full h-48 object-cover" />
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-gradient text-2xl font-bold mb-4">Creative Art</h2>
+                <p class="text-gray-700 mb-6">Beautiful imagery combined with gradient backgrounds.</p>
+                <img src="https://source.unsplash.com/800x600/?art" class="rounded-xl w-full h-48 object-cover" />
+            </div>
+
+            <div class="card-gradient rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-2xl font-bold text-white mb-4">Technology</h2>
+                <p class="text-white mb-6">Futuristic themes with vibrant color transitions.</p>
+                <img src="https://source.unsplash.com/800x600/?technology" class="rounded-xl w-full h-48 object-cover" />
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <button class="btn-gradient text-white font-bold py-4 px-8 rounded-full text-xl shadow-2xl hover:opacity-90 transition">
+                Explore More
+            </button>
+            <p class="text-white mt-8 text-lg">Refresh page for new Unsplash images</p>
+        </div>
+    </main>
+</body>
+</>
